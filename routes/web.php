@@ -19,6 +19,14 @@ use App\Http\Controllers\ImageUploader;
 
 
 Route::get('/', [Controller::class, 'index']);
+Route::get('/resume', [Controller::class, 'resume']);
+Route::get('/listen-read', [Controller::class, 'listenRead']);
+Route::get('/speaking', [Controller::class, 'speaking']);
+Route::get('/dive-in', [Controller::class, 'diveIn']);
+Route::get('/about', [Controller::class, 'about']);
+Route::get('/contact', [Controller::class, 'contact']);
+
+//Admin Portal Routes
 Route::group(
     ['prefix' => 'admin'],
     function () {

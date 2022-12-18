@@ -6,20 +6,43 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
-use Illuminate\Support\Facades\Auth;
 
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
-    
     public function index()
     {
-        if (Auth::user()) {
-            return redirect('admin/dashboard');
-        } else {
-            return redirect('admin/login');
-        }
+        return view('index');
     }
 
+    public function about()
+    {
+        return view('about');
+    }
+
+    public function contact()
+    {
+        return view('contact');
+    }
+
+    public function speaking()
+    {
+        return view('speaking');
+    }
+
+    public function listenRead()
+    {
+        return view('listen-read');
+    }
+
+    public function diveIn()
+    {
+        return view('dive-in');
+    }
+
+    public function resume()
+    {
+        return view('resume');
+    }
 }
