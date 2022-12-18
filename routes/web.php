@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\ImageUploader;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,12 +19,27 @@ use App\Http\Controllers\BlogController;
 
 
 Route::get('/', [Controller::class, 'index']);
+Route::group(
+    ['prefix' => 'admin'],
+    function () {
+        //User Routes
+        Route::get('/', [UserController::class, 'index']);
+        Route::get('/login', [UserController::class, 'login'])->name('admin/login');
+        Route::post('/dologin', [UserController::class, 'doLogin']);
+        Route::get('/dashboard', [UserController::class, 'dashboard']);
+        Route::get('/logout', [UserController::class, 'doLogout']);
 
-//User Routes
-Route::get('/login', [UserController::class, 'login']);
-Route::get('/dashboard', [UserController::class, 'dashboard']);
 
+        //Blog Routes
+        Route::get('/add-blog', [BlogController::class, 'addBlog']);
+        Route::post('/save-blog', [BlogController::class, 'saveBlog']);
+        Route::get('/view-blogs', [BlogController::class, 'viewBlogs']);
+        Route::get('/edit-blog/{id}', [BlogController::class, 'editBlog']);
+        Route::post('/update-blog', [BlogController::class, 'updateBlog']);
+        Route::post('/delete-blog', [BlogController::class, 'destroyBlog']);
 
-//Blog Routes
-Route::get('/add-blog', [BlogController::class, 'addBlog']);
-Route::get('/view-blogs', [BlogController::class, 'viewBlogs']);
+        //Image Upload Route
+        Route::post('/upload-image', [ImageUploader::class, 'upload']);
+    }
+);
+

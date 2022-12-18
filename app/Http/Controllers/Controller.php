@@ -12,12 +12,13 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
+    
     public function index()
     {
         if (Auth::user()) {
-            return redirect('dashboard');
+            return redirect('admin/dashboard');
         } else {
-            return redirect('login');
+            return redirect('admin/login');
         }
     }
 

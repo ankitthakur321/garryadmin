@@ -1,28 +1,25 @@
 <!doctype html>
 <html lang="en">
 
-
-<!-- Mirrored from codervent.com/rocker/demo/vertical/authentication-signin.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 Jan 2022 15:35:31 GMT -->
-
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--favicon-->
-    <link rel="icon" href="{{ asset('images/favicon-32x32.png') }}" type="image/png" />
+    <link rel="icon" href="{{ asset('admin/images/favicon-32x32.png') }}" type="image/png" />
     <!--plugins-->
-    <link href="{{ asset('plugins/simplebar/css/simplebar.css') }}" rel="stylesheet" />
-    <link href="{{ asset('plugins/perfect-scrollbar/css/perfect-scrollbar.css') }}" rel="stylesheet" />
-    <link href="{{ asset('plugins/metismenu/css/metisMenu.min.css') }}" rel="stylesheet" />
+    <link href="{{ asset('admin/plugins/simplebar/css/simplebar.css') }}" rel="stylesheet" />
+    <link href="{{ asset('admin/plugins/perfect-scrollbar/css/perfect-scrollbar.css') }}" rel="stylesheet" />
+    <link href="{{ asset('admin/plugins/metismenu/css/metisMenu.min.css') }}" rel="stylesheet" />
     <!-- loader-->
-    <link href="{{ asset('css/pace.min.css" rel="stylesheet') }}" />
-    <script src="{{ asset('js/pace.min.js') }}"></script>
+    <link href="{{ asset('admin/css/pace.min.css" rel="stylesheet') }}" />
+    <script src="{{ asset('admin/js/pace.min.js') }}"></script>
     <!-- Bootstrap CSS -->
-    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/bootstrap-extended.css') }}" rel="stylesheet">
+    <link href="{{ asset('admin/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('admin/css/bootstrap-extended.css') }}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet">
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/icons.css') }}" rel="stylesheet">
+    <link href="{{ asset('admin/css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('admin/css/icons.css') }}" rel="stylesheet">
     <title>Login - GarryAdmin</title>
 </head>
 
@@ -34,7 +31,7 @@
                 <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3">
                     <div class="col mx-auto">
                         <div class="mb-4 text-center">
-                            <img src="{{ asset('images/logo-gaurav.png') }}" width="200" alt="logo" />
+                            <img src="{{ asset('admin/images/logo-gaurav.png') }}" width="200" alt="logo" />
                         </div>
                         <div class="card">
                             <div class="card-body">
@@ -42,21 +39,32 @@
                                     <div class="text-center">
                                         <h3 class="">Sign in</h3>
                                     </div>
+                                    @if ($errors->first('email') || $errors->first('password'))
+                                        <div class="alert alert-danger" role="alert">
+                                            {{ $errors->first('email') }}
+                                            {{ $errors->first('password') }}
+                                        </div>
+                                    @endif
+                                    @if (session('status'))
+                                        <div class="alert alert-danger" role="alert">
+                                            {{ session('status') }}
+                                        </div>
+                                    @endif
                                     <div class="form-body">
-                                        <form class="row g-3">
+                                        <form class="row g-3" method="POST" action="dologin">
+                                            @csrf
                                             <div class="col-12">
                                                 <label for="inputEmailAddress" class="form-label">Email Address</label>
-                                                <input type="email" class="form-control" id="inputEmailAddress"
+                                                <input type="email" class="form-control" id="email" name="email"
                                                     placeholder="Email Address">
                                             </div>
                                             <div class="col-12">
-                                                <label for="inputChoosePassword" class="form-label">Enter
+                                                <label for="password" class="form-label">Enter
                                                     Password</label>
                                                 <div class="input-group" id="show_hide_password">
                                                     <input type="password" class="form-control border-end-0"
-                                                        id="inputChoosePassword" value="12345678"
-                                                        placeholder="Enter Password"> <a href="javascript:;"
-                                                        class="input-group-text bg-transparent"><i
+                                                        id="password" name="password" placeholder="Enter Password"> <a
+                                                        href="javascript:;" class="input-group-text bg-transparent"><i
                                                             class='bx bx-hide'></i></a>
                                                 </div>
                                             </div>
@@ -84,12 +92,12 @@
     </div>
     <!--end wrapper-->
     <!-- Bootstrap JS -->
-    <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('admin/js/bootstrap.bundle.min.js') }}"></script>
     <!--plugins-->
-    <script src="{{ asset('js/jquery.min.js') }}"></script>
-    <script src="{{ asset('plugins/simplebar/js/simplebar.min.js') }}"></script>
-    <script src="{{ asset('plugins/metismenu/js/metisMenu.min.js') }}"></script>
-    <script src="{{ asset('plugins/perfect-scrollbar/js/perfect-scrollbar.js') }}"></script>
+    <script src="{{ asset('admin/js/jquery.min.js') }}"></script>
+    <script src="{{ asset('admin/plugins/simplebar/js/simplebar.min.js') }}"></script>
+    <script src="{{ asset('admin/plugins/metismenu/js/metisMenu.min.js') }}"></script>
+    <script src="{{ asset('admin/plugins/perfect-scrollbar/js/perfect-scrollbar.js') }}"></script>
     <!--Password show & hide js -->
     <script>
         $(document).ready(function() {
@@ -108,10 +116,6 @@
         });
     </script>
     <!--app JS-->
-    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('admin/js/app.js') }}"></script>
 </body>
-
-
-<!-- Mirrored from codervent.com/rocker/demo/vertical/authentication-signin.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 Jan 2022 15:35:34 GMT -->
-
 </html>

@@ -5,5 +5,5 @@
 <a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
 <!--End Back To Top Button-->
 <footer class="page-footer">
-    <p class="mb-0">Copyright © GauravGarry Admin <script>document.write(new Date().getFullYear());</script>. All right reserved.</p>
+    <p class="mb-0">Copyright © GauravGarry Admin {{ date("Y") }}. All right reserved.</p>
 </footer>
