@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    Dive-in - Gaurav Garry'
+    Dive-in - Gaurav Garry
 @endsection
 
 @section('description')

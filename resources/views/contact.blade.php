@@ -5,7 +5,7 @@
 @endsection
 
 @section('description')
-    This is contact page of Gaurav Garry.'
+    This is contact page of Gaurav Garry.
 @endsection
 
 @section('content')
