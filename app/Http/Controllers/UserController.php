@@ -13,15 +13,15 @@ class UserController extends Controller
     public function index()
     {
         if (Auth::user()) {
-            return redirect('admin/dashboard');
+            return redirect('my-admin/dashboard');
         } else {
-            return redirect('admin/login');
+            return redirect('my-admin/login');
         }
     }
     public function login()
     {
         if (Auth::user())
-            return back();
+            return redirect('my-admin/dashboard');
         else
             return view('admin.index');
     }
@@ -31,7 +31,7 @@ class UserController extends Controller
         if (Auth::user())
             return view('admin.dashboard');
         else
-            return redirect('admin/login');
+            return redirect('my-admin/login');
     }
 
     public function doLogin(Request $request)
@@ -58,7 +58,7 @@ class UserController extends Controller
             if (Auth::attempt($userdata)) {
                 // validation successful
                 $request->session()->regenerate();
-                return redirect()->intended('admin/dashboard');
+                return redirect()->intended('my-admin/dashboard');
             } else {
                 // validation not successful, send back to form
                 return back()->with('status', 'Invalid Credentials');
@@ -69,6 +69,6 @@ class UserController extends Controller
     public function doLogout()
     {
         Auth::logout(); // logging out user
-        return redirect('admin/login'); // redirection to login screen
+        return redirect('my-admin/login'); // redirection to login screen
     }
 }

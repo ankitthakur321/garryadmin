@@ -36,7 +36,7 @@
                         @foreach ($blogs as $key => $blog)
                             <div class="col-md-3">
                                 <div class="card border-end shadow-none">
-                                    <img src="{{ $blog->blog_image }}" class="card-img-top" alt="Blog Image">
+                                    <img src="{{ asset($blog->blog_image) }}" class="card-img-top" alt="Blog Image">
                                     <div class="card-body">
                                         <h5 class="card-title">{{ $blog->blog_title }}</h5>
                                         <p class="card-text">{{ $blog->blog_short_description }}</p>

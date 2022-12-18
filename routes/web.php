@@ -28,11 +28,11 @@ Route::get('/contact', [Controller::class, 'contact']);
 
 //Admin Portal Routes
 Route::group(
-    ['prefix' => 'admin'],
+    ['prefix' => 'my-admin'],
     function () {
         //User Routes
         Route::get('/', [UserController::class, 'index']);
-        Route::get('/login', [UserController::class, 'login'])->name('admin/login');
+        Route::get('/login', [UserController::class, 'login'])->name('my-admin/login');
         Route::post('/dologin', [UserController::class, 'doLogin']);
         Route::get('/dashboard', [UserController::class, 'dashboard']);
         Route::get('/logout', [UserController::class, 'doLogout']);

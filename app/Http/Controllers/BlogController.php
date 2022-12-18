@@ -33,7 +33,7 @@ class BlogController extends Controller
         $blog->blog_content = $request->input('blogContent');
         $blog->blog_author = $request->input('blogAuthor');
         $blog->save();
-        return redirect('admin/view-blogs')->with('status', "Blog Inserted Successfully");
+        return redirect('my-admin/view-blogs')->with('status', "Blog Inserted Successfully");
     }
 
     public function viewBlogs()
@@ -78,7 +78,7 @@ class BlogController extends Controller
             ]);
         }
 
-        return redirect('admin/view-blogs')->with('status', 'Blog updated successfully.');;
+        return redirect('my-admin/view-blogs')->with('status', 'Blog updated successfully.');;
     }
 
     public function destroyBlog(Request $request)
