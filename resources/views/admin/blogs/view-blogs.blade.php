@@ -44,7 +44,7 @@
                                         <div class="d-flex align-items-center gap-2">
                                             <a href="javascript:;" class="btn btn-success"><i
                                                     class='bx bx-show'></i>View</a>
-                                            <a href="/admin/edit-blog/{{ $blog->id }}" class="btn btn-info"><i class='bx bx-edit'></i>Edit</a>
+                                            <a href="/my-admin/edit-blog/{{ $blog->id }}" class="btn btn-info"><i class='bx bx-edit'></i>Edit</a>
                                             <button class="btn btn-danger btn-delete" type="button" data-id="{{ $blog->id }}"><i
                                                     class='bx bx-trash'></i>Delete</button>
                                         </div>
@@ -74,7 +74,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <form action="/admin/delete-blog" method="post">
+                    <form action="/my-admin/delete-blog" method="post">
                         @csrf
                         <input type="hidden" id="blogId" name="blogId">
                         <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>

@@ -26,7 +26,7 @@
                     <h6 class="mb-0 text-uppercase">Add Blog Content</h6>
                     <hr />
                     {{-- <h4 class="mb-4">Add Blog Content</h4> --}}
-                    <form method="POST" class="row g-3 needs-validation" action="/admin/save-blog" enctype="multipart/form-data">
+                    <form method="POST" class="row g-3 needs-validation" action="/my-admin/save-blog" enctype="multipart/form-data">
                         @csrf
                         <div class="col-md-10">
                             <label for="blogTitle" class="form-label">Blog Title</label>
