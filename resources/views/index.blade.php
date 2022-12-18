@@ -178,7 +178,7 @@
                                 <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipiscing elit sed doeiusmod
                                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis
                                     nostrud.</p>
-                                <a class="thm-btn mini-btn brd-rd3" href="about.html" title="">ABOUT US</a>
+                                <a class="thm-btn mini-btn brd-rd3" href="/about" title="">ABOUT US</a>
                             </div>
                         </div>
                     </div>
@@ -322,7 +322,7 @@
                                 class="fas fa-play"></i></a>
                         <span class="d-block">How Can We Help ?</span>
                         <h3 class="mb-0">Check video presentation to find out more about us</h3>
-                        <a class="thm-btn mini-btn brd-rd3" href="about.html" title="">ABOUT US</a>
+                        <a class="thm-btn mini-btn brd-rd3" href="/about" title="">ABOUT US</a>
                     </div>
                 </div><!-- Video Presentation Wrap -->
             </div>
