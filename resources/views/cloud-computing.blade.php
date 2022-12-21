@@ -1,24 +1,25 @@
 @extends('layouts.master')
 
 @section('title')
-    Listen & Read - Gaurav Garry
+    Cloud Computing - Gaurav Garry
 @endsection
 
 @section('description')
-    This is listen & read page of Gaurav Garry.
+    This is cloud computing page of Gaurav Garry.
 @endsection
 
 @section('content')
     <section>
         <div class="w-100 position-relative">
-            <div class="fixed-bg" style="background-image: url(assets/images/parallax8.jpg);"></div>
+            <div class="fixed-bg" style="background:#000;"></div>
             <div class="container">
                 <div class="page-title text-center w-100">
-                    <h1 class="mb-0">Listen & Read</h1>
+                    <h1 class="mb-2 text-white">Cloud Computing</h1>
+                    <p class="mb-0 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores facilis et nemo non qui, dolor beatae animi ducimus inventore pariatur, laudantium, similique adipisci aliquam soluta quibusdam illum! Rerum, incidunt earum?</p>
                 </div><!-- Page Title -->
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="/" title=""><i class="icon_house"></i></a></li>
-                    <li class="breadcrumb-item active">listen & read</li>
+                    <li class="breadcrumb-item active">cloud computing</li>
                 </ol><!-- Breadcrumb -->
             </div>
         </div>

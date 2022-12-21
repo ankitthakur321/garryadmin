@@ -1,6 +1,6 @@
 <header class="stick style1 w-100 d-flex flex-wrap justify-content-between align-items-center d-lg-none">
     <div class="logo">
-        <a href="index.php" title="Home">
+        <a href="/" title="Home">
             <img class="img-fluid img-logo" src="{{ asset('assets/images/logo-gaurav.png') }}" alt="Logo"
                 srcset="{{ asset('assets/images/logo-gaurav.png') }}">
         </a>
@@ -13,13 +13,11 @@
     <div class="menu-wrap">
         <span class="menu-cls-btn rounded-circle"><i class="icon_close"></i></span>
         <ul class="mb-0 list-unstyled w-100">
-            <li><a href="/" title="">Home</a></li>
-            <li><a href="/resume" title="">Resume</a></li>
-            <li><a href="/dive-in" title="">Dive-in</a></li>
-            <li><a href="/listen-read" title="">Listen & Read</a></li>
-            <li><a href="/speaking" title="">Speaking</a></li>
-            <li><a href="/about" title="">About</a></li>
-            <li><a href="/contact" title="">Contact</a></li>
+            <li><a href="/about" title="">Know About Me</a></li>
+            <li><a href="/resume" title=""> <i class="fa-brands fa-linkedin"></i>LinkedIn</a></li>
+            <li><a href="/dive-in" title=""><i class="fa-brands fa-square-twitter"></i> Twitter</a></li>
+            <li><a href="/listen-read" title=""><i class="fa-brands fa-square-facebook"></i>Facebook</a></li>
+            <li><a href="/speaking" title=""><i class="fa-brands fa-square-instagram"></i>Instagram</a></li>
         </ul>
     </div><!-- Menu Wrap -->
 </header><!-- Header -->
@@ -32,20 +30,18 @@
 </div><!-- Search Wrap -->
 <div class="sticky-header w-100 position-fixed active bg-transparent">
     <div class="logo">
-        <a href="index.php" title="Home">
+        <a href="/" title="Home">
             <img class="img-fluid img-logo" src="{{ asset('assets/images/logo-gaurav.png') }}" alt="Logo"
                 srcset="{{ asset('assets/images/logo-gaurav.png') }}">
         </a>
     </div>
     <nav class="menu-wrap2">
         <ul class="mb-0 list-unstyled w-100">
-            <li class="text-white"><a href="/" title="">Home</a></li>
-            <li class="text-white"><a href="/resume" title="">Resume</a></li>
-            <li class="text-white"><a href="/dive-in" title="">Dive-in</a></li>
-            <li class="text-white"><a href="/listen-read" title="">Listen & Read</a></li>
-            <li class="text-white"><a href="/speaking" title="">Speaking</a></li>
-            <li class="text-white"><a href="/about" title="">About</a></li>
-            <li class="text-white"><a href="/contact" title="">Contact</a></li>
+            <li class="text-white"><a href="/about" title="">Know About Me</a></li>
+            <li class="text-white"><a href="https://www.linkedin.com/" title=""><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+            <li class="text-white"><a href="https://www.twitter.com/" title=""><i class="fa-brands fa-square-twitter"></i> Twitter</a></li>
+            <li class="text-white"><a href="https://www.facebook.com/" title=""><i class="fa-brands fa-square-facebook"></i> Facebook</a></li>
+            <li class="text-white"><a href="https://www.instagram.com/" title=""><i class="fa-brands fa-square-instagram"></i> Instagram</a></li>
         </ul>
     </nav>
 </div><!-- Sticky Header -->

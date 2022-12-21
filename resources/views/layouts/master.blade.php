@@ -21,6 +21,9 @@
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/color.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- REVOLUTION STYLE SHEETS -->
     <link rel="stylesheet" href="{{ asset('assets/css/revolution/settings.css') }}">
@@ -66,18 +69,39 @@
 
         .header-btn {
             margin-top: 300px;
-            font-size: 36px;
+            font-size: 40px;
         }
+
+         .header-btn1 {
+            margin-top: 300px;
+            font-size: 40px;
+        }
+        .header-btn2 {
+            margin-top: 300px;
+            font-size: 40px;
+        }
+
+        .header-btn3 {
+            margin-top: 300px;
+            font-size: 40px;
+        }
+
         .drk-bg3 {
             background-color: #000;
         }
+
         .tp-caption #gaurav {
-                display: block;
-                zoom:.6;
-            }
+            display: block;
+            zoom: .6;
+        }
+
+        .tp-caption #avatar {
+            display: block;
+            zoom: 1.2;
+        }
 
 
-        
+
 
         @media only screen and (max-width: 480px) {
             .img-logo {
@@ -115,19 +139,49 @@
                 font-size: 18px;
             }
 
+            .header-btn1 {
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 50px;
+                font-size: 20px;
+                width:100px;
+            }
+
+            .header-btn2 {
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 150px;
+                font-size: 20px;
+                width:100px;
+            }
+
+            .header-btn3 {
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 150px;
+                font-size: 20px;
+                width:100px;
+            }
+
             .tp-caption #gaurav {
                 display: block;
-                zoom:.3;
+                zoom: .3;
             }
 
             .tp-caption .imglyr {
-                margin-top:-200px;
-                overflow:visible;
+                margin-top: -200px;
+                overflow: visible;
             }
 
-            .rev_slider img, .tp-simpleresponsive img {
-                margin-top:00px;
-                overflow:visible;
+            .tp-caption #avatar {
+                display: block;
+                zoom: .3;
+            }
+
+            .rev_slider img,
+            .tp-simpleresponsive img {
+                margin-top: 00px;
+                overflow: visible;
             }
     </style>
 </head>

@@ -19,9 +19,9 @@ use App\Http\Controllers\ImageUploader;
 
 
 Route::get('/', [Controller::class, 'index']);
-Route::get('/resume', [Controller::class, 'resume']);
-Route::get('/listen-read', [Controller::class, 'listenRead']);
-Route::get('/speaking', [Controller::class, 'speaking']);
+Route::get('/cloud-computing', [Controller::class, 'cloudComputing']);
+Route::get('/network-security', [Controller::class, 'networkSecurity']);
+Route::get('/social-media', [Controller::class, 'socialMedia']);
 Route::get('/dive-in', [Controller::class, 'diveIn']);
 Route::get('/about', [Controller::class, 'about']);
 Route::get('/contact', [Controller::class, 'contact']);

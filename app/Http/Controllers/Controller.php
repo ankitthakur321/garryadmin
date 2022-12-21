@@ -26,14 +26,14 @@ class Controller extends BaseController
         return view('contact');
     }
 
-    public function speaking()
+    public function socialMedia()
     {
-        return view('speaking');
+        return view('social-media');
     }
 
-    public function listenRead()
+    public function networkSecurity()
     {
-        return view('listen-read');
+        return view('network-security');
     }
 
     public function diveIn()
@@ -41,8 +41,8 @@ class Controller extends BaseController
         return view('dive-in');
     }
 
-    public function resume()
+    public function cloudComputing()
     {
-        return view('resume');
+        return view('cloud-computing');
     }
 }

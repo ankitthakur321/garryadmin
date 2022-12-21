@@ -1,24 +1,25 @@
 @extends('layouts.master')
 
 @section('title')
-    Resume - Gaurav Garry
+    Network & Security - Gaurav Garry
 @endsection
 
 @section('description')
-    This is resume page of Gaurav Garry.
+    This is network & security page of Gaurav Garry.
 @endsection
 
 @section('content')
     <section>
         <div class="w-100 position-relative">
-            <div class="fixed-bg" style="background-image: url(assets/images/parallax8.jpg);"></div>
+            <div class="fixed-bg" style="background: #000;"></div>
             <div class="container">
                 <div class="page-title text-center w-100">
-                    <h1 class="mb-0">Resume</h1>
+                    <h1 class="mb-2 text-white">Network & Security</h1>
+                    <p class="mb-0 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio maxime, consequuntur velit repellat quas dolorum voluptatem! Ab et velit vitae, pariatur temporibus quae aliquam distinctio ipsum, quasi odio, odit modi.</p>
                 </div><!-- Page Title -->
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="/" title=""><i class="icon_house"></i></a></li>
-                    <li class="breadcrumb-item active">resume</li>
+                    <li class="breadcrumb-item active">network & security</li>
                 </ol><!-- Breadcrumb -->
             </div>
         </div>
