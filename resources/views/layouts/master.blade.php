@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -29,8 +30,9 @@
     <link rel="stylesheet" href="{{ asset('assets/css/revolution/navigation.css') }}">
     <style>
         .img-logo {
-            height: 150px;
-            width: 200px;
+            height: 80px;
+            width: 110px;
+            margin-top: 10px;
         }
 
         .img-logo2 {
@@ -40,7 +42,7 @@
         }
 
         .header-text1 {
-            margin-left: 20px;
+            margin-left: 0px;
         }
 
         .header-text2 {
@@ -58,18 +60,29 @@
         .bottom-line {
             border: 3px solid #ffffff;
             width: 420px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .header-btn {
-            margin-left: 100px;
             margin-top: 300px;
-            font-size: 30px;
+            font-size: 36px;
         }
+        .drk-bg3 {
+            background-color: #000;
+        }
+        .tp-caption #gaurav {
+                display: block;
+                zoom:.6;
+            }
+
+
+        
 
         @media only screen and (max-width: 480px) {
             .img-logo {
-                height: 65px;
-                width: 100px;
+                height: 60px;
+                width: 80px;
             }
 
             .header-text1 {
@@ -99,9 +112,23 @@
                 margin-left: auto;
                 margin-right: auto;
                 margin-top: 50px;
-                font-size: 14px;
+                font-size: 18px;
             }
-        }
+
+            .tp-caption #gaurav {
+                display: block;
+                zoom:.3;
+            }
+
+            .tp-caption .imglyr {
+                margin-top:-200px;
+                overflow:visible;
+            }
+
+            .rev_slider img, .tp-simpleresponsive img {
+                margin-top:00px;
+                overflow:visible;
+            }
     </style>
 </head>
 

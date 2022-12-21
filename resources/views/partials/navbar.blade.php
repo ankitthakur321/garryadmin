@@ -1,4 +1,4 @@
-<header class="stick style1 w-100 d-flex flex-wrap justify-content-between align-items-center">
+<header class="stick style1 w-100 d-flex flex-wrap justify-content-between align-items-center d-lg-none">
     <div class="logo">
         <a href="index.php" title="Home">
             <img class="img-fluid img-logo" src="{{ asset('assets/images/logo-gaurav.png') }}" alt="Logo"
@@ -30,22 +30,22 @@
         <button type="submit"><i class="fas fa-search"></i></button>
     </form>
 </div><!-- Search Wrap -->
-<div class="sticky-header w-100 position-fixed">
+<div class="sticky-header w-100 position-fixed active bg-transparent">
     <div class="logo">
         <a href="index.php" title="Home">
-            <img class="img-fluid img-logo2" src="{{ asset('assets/images/logo-gaurav.png') }}" alt="Logo"
+            <img class="img-fluid img-logo" src="{{ asset('assets/images/logo-gaurav.png') }}" alt="Logo"
                 srcset="{{ asset('assets/images/logo-gaurav.png') }}">
         </a>
     </div>
     <nav class="menu-wrap2">
         <ul class="mb-0 list-unstyled w-100">
-            <li><a href="/" title="">Home</a></li>
-            <li><a href="/resume" title="">Resume</a></li>
-            <li><a href="/dive-in" title="">Dive-in</a></li>
-            <li><a href="/listen-read" title="">Listen & Read</a></li>
-            <li><a href="/speaking" title="">Speaking</a></li>
-            <li><a href="/about" title="">About</a></li>
-            <li><a href="/contact" title="">Contact</a></li>
+            <li class="text-white"><a href="/" title="">Home</a></li>
+            <li class="text-white"><a href="/resume" title="">Resume</a></li>
+            <li class="text-white"><a href="/dive-in" title="">Dive-in</a></li>
+            <li class="text-white"><a href="/listen-read" title="">Listen & Read</a></li>
+            <li class="text-white"><a href="/speaking" title="">Speaking</a></li>
+            <li class="text-white"><a href="/about" title="">About</a></li>
+            <li class="text-white"><a href="/contact" title="">Contact</a></li>
         </ul>
     </nav>
 </div><!-- Sticky Header -->

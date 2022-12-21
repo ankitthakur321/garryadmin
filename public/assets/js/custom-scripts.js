@@ -353,16 +353,16 @@ jQuery(window).on('load',function(){
     $(this).parent().parent().parent().fadeOut();
   }); */
 
-  //===== Header =====//
-  var menu_height = $('header').innerHeight();
-  $(window).on('scroll',function () {
-    var scroll = $(window).scrollTop();
-    if (scroll >= menu_height) {
-      $('.sticky-header').addClass('active');
-    } else {
-      $('.sticky-header').removeClass('active');
-    }
-  });
+  // //===== Header =====//
+  // var menu_height = $('header').innerHeight();
+  // $(window).on('scroll',function () {
+  //   var scroll = $(window).scrollTop();
+  //   if (scroll >= menu_height) {
+  //     $('.sticky-header').addClass('active');
+  //   } else {
+  //     $('.sticky-header').removeClass('active');
+  //   }
+  // });
 
   //===== Isotope =====//
   if (jQuery('.fltr-itm').length > 0) {

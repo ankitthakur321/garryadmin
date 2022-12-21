@@ -1,10 +1,10 @@
 <footer>
-    <div class="w-100 drk-bg pt-100 pb-70">
+    <div class="w-100 drk-bg3 d-lg-none" style="padding-top:20px;padding-bottom:33px;">
         <div class="container">
             <div class="footer-wrap text-center w-100">
                 <div class="footer-inner d-inline-block w-100">
                     <div class="logo d-inline-block">
-                        <h1 class="mb-0 text-white"><a href="/" title="">GAURAV GARRY</a></h1>
+                        <h1 class="mb-0 text-white" style="font-family: Lucida Handwriting"><a href="/" title="">GAURAV GARRY</a></h1>
                     </div>
                     <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipiscing elit sed doeiusmod tempor
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud.</p>
@@ -25,6 +25,12 @@
         </div>
     </div>
 </footer><!-- Footer -->
-<div class="bootom-bar drk-bg2 text-center w-100">
-    <p class="mb-0">&copy;  <a href="/" title="Home">GAURAV GARRY</a> All rights reserved {{ date('Y') }}.</p>
+<div class="bootom-bar drk-bg3 d-flex justify-content-lg-start justify-content-center w-100" style="height:57px;">
+
+    <a href="/contact" class="btn ml-lg-5 text-white" style="margin-top:-30px;background-color:#ee3364;font-weight:800;"><i class="fa fa-phone-alt"></i>&nbsp;&nbsp;Contact Me</a>
+
+    {{-- <div class="col-md-6">
+            <p style="margin-top:-20px;">&copy;  <a href="/" title="Home">GAURAV GARRY</a> All rights reserved {{ date('Y') }}.</p>
+        </div> --}}
+</div>
 </div>

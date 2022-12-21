@@ -9,7 +9,7 @@
 @endsection
 
 @section('content')
-    <section>
+    <section >
         <div class="w-100">
             <div id="rev_slider_4_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="notgeneric125"
                 data-source="gallery" style="background-color:transparent;padding:0px;">
@@ -22,7 +22,7 @@
                             data-saveperformance="off" data-param1="" data-param2="" data-param3="" data-param4=""
                             data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10=""
                             data-description=""
-                            style="background: hsla(0, 0%, 0%, 1);background: linear-gradient(315deg, hsla(0, 0%, 0%, 1) 50%, hsla(0, 0%, 100%, 1) 100%, hsla(14, 92%, 86%, 1) 100%);background: -moz-linear-gradient(315deg, hsla(0, 0%, 0%, 1) 50%, hsla(0, 0%, 100%, 1) 100%, hsla(14, 92%, 86%, 1) 100%);background: -webkit-linear-gradient(315deg, hsla(0, 0%, 0%, 1) 50%, hsla(0, 0%, 100%, 1) 100%, hsla(14, 92%, 86%, 1) 100%);filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#FFFFFF', GradientType=1 );">
+                            style="background: #000;height:90%;">
 
                            
                             <!-- LAYER NR. 2 -->
@@ -54,37 +54,37 @@
                             </div>
 
                             <!-- LAYER NR. 4 -->
-                            <div class="tp-caption tp-resizeme" id="slide1-layer-4"
-                                data-x="['right','right','right','right']" data-hoffset="['-150','0','0','0']"
-                                data-y="['bottom','bottom','bottom','bottom']" data-voffset="['0','0','0','0']"
-                                data-fontsize="['60','60','50','40']" data-lineheight="['70','70','60','50']"
+                            <div class="tp-caption imglyr" id="slide1-layer-4"
+                                data-x="['right','right','right','right']" data-hoffset="['-50','0','0','0']"
+                                data-y="['bottom','bottom','bottom','bottom']" data-voffset="['50','0','0','0']"
+                                 data-lineheight="['70','70','60','50']"
                                 data-width="none" data-height="none" data-whitespace="nowrap" data-type="text"
                                 data-responsive_offset="on"
                                 data-frames='[{"from":"y:bottom;z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:0;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
                                 data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]"
                                 data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                                style="letter-spacing: 0;font-weight:700;font-family: Barlow;color:#fff;height:750px;"><img
-                                    src="assets/images/Gaurav.png" alt="slide1-mckp1.png">
+                                style="letter-spacing: 0;font-weight:700;font-family: Barlow;color:#fff;"><img
+                                    src="assets/images/Gaurav.png" id="gaurav" alt="Gaurav.png">
                             </div>
 
                             <!-- LAYER NR. 5 -->
-                            <div class="tp-caption tp-resizeme header-text1" id="slide1-layer-5"
-                                data-x="['left','left','center','center']" data-hoffset="['0','0','0','0']"
+                            <div class="tp-caption tp-resizeme header-text1 text-center" id="slide1-layer-5"
+                                data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
                                 data-y="['middle','middle','middle','middle']" data-voffset="['-60','-60','-60','-60']"
                                 data-fontsize="['40','40','20','15']" data-lineheight="['150','100','90','60']"
                                 data-width="none" data-height="none" data-whitespace="nowrap" data-type="text"
                                 data-responsive_offset="on"
                                 data-frames='[{"from":"y:bottom;z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:0;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2000,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
-                                data-textAlign="['left','left','center','center']" data-paddingtop="[0,0,0,0]"
+                                data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]"
                                 data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                                 style="letter-spacing: 0;font-weight:700;font-family: Lucida Calligraphy;color:#ffffff;">
                                 Nonstop
-                                <div class="header-text2">Knowledge</div>
+                                <div class="header-text2 text-center">Knowledge</div>
                             </div>
 
                             <!-- LAYER NR. 5 -->
                             <div class="tp-caption tp-resizeme header-text3" id="slide1-layer-5"
-                                data-x="['left','left','center','center']" data-hoffset="['0','0','0','0']"
+                                data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
                                 data-y="['middle','middle','middle','middle']" data-voffset="['-60','-60','-60','-60']"
                                 data-fontsize="['70','70','40','25']" data-lineheight="['150','100','90','60']"
                                 data-width="none" data-height="none" data-whitespace="nowrap" data-type="text"
@@ -94,17 +94,17 @@
                                 data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                                 style="letter-spacing: 0;font-weight:700;font-family: Times New Roman;color:#ffffff;">
                                 Making Business
-                                <div class="header-text4">Successful</div>
+                                <div class="header-text4 text-center">Successful</div>
                                 <div class="bottom-line"></div>
                             </div>
 
                             <hr />
                             <!-- LAYER NR. 7 -->
                             <div class="tp-caption rev-btn thm-btn header-btn" id="slide1-layer-7"
-                                data-x="['left','left','center','center']" data-hoffset="['0','0','0','0']"
+                                data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
                                 data-y="['middle','middle','middle','middle']" data-voffset="['145','145','120','120']"
                                 data-width="none" data-height="none" data-whitespace="nowrap" data-type="button"
-                                data-actions='[{"event":"click","action":"simplelink","slide":"next","delay":"","target": "_self", "url": "portfolio.html"}]'
+                                data-actions='[{"event":"click","action":"simplelink","slide":"next","delay":"","target": "_self", "url": "/dive-in"}]'
                                 data-responsive_offset="on" data-responsive="on"
                                 data-frames='[{"from":"y:-[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:0;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":3000,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
                                 data-textAlign="['center','center','center','center']" data-paddingtop="[20.1,17,14,12]"
@@ -119,7 +119,7 @@
             </div><!-- END REVOLUTION SLIDER -->
         </div>
     </section>
-    <section>
+    {{-- <section>
         <div class="w-100 pt-90">
             <div class="container">
                 <div class="serv-wrap w-100 text-center">
@@ -784,5 +784,5 @@
                 </div><!-- Newsletter Wrap -->
             </div>
         </div>
-    </section>
+    </section> --}}
 @endsection
