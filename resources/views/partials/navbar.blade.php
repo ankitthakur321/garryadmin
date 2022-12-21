@@ -14,10 +14,10 @@
         <span class="menu-cls-btn rounded-circle"><i class="icon_close"></i></span>
         <ul class="mb-0 list-unstyled w-100">
             <li><a href="/about" title="">Know About Me</a></li>
-            <li><a href="/resume" title=""> <i class="fa-brands fa-linkedin"></i>LinkedIn</a></li>
-            <li><a href="/dive-in" title=""><i class="fa-brands fa-square-twitter"></i> Twitter</a></li>
-            <li><a href="/listen-read" title=""><i class="fa-brands fa-square-facebook"></i>Facebook</a></li>
-            <li><a href="/speaking" title=""><i class="fa-brands fa-square-instagram"></i>Instagram</a></li>
+            <li><a href="https://www.linkedin.com/" title=""> <i class="fa-brands fa-linkedin"></i>LinkedIn</a></li>
+            <li><a href="https://www.twitter.com/" title=""><i class="fa-brands fa-square-twitter"></i> Twitter</a></li>
+            <li><a href="https://www.facebook.com/" title=""><i class="fa-brands fa-square-facebook"></i>Facebook</a></li>
+            <li><a href="https://www.instagram.com/" title=""><i class="fa-brands fa-square-instagram"></i>Instagram</a></li>
         </ul>
     </div><!-- Menu Wrap -->
 </header><!-- Header -->
