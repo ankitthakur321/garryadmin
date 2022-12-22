@@ -1,0 +1,228 @@
+.img-logo {
+    height: 80px;
+    width: 110px;
+    margin-top: 10px;
+}
+
+.img-logo2 {
+    height: 80px;
+    width: 110px;
+}
+
+.header-text2 {
+    margin-top: -100px;
+}
+
+.header-text4 {
+    margin-top: -100px;
+}
+
+.bottom-line {
+    border: 3px solid #ffffff;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -30px;
+    background-color: #ffffff;
+}
+
+.header-btn {
+    font-size: 30px;
+}
+
+.header-btn1 {
+    font-size: 25px;
+    width: 400px;
+}
+
+.header-btn2 {
+    font-size: 25px;
+    width: 400px;
+}
+
+.header-btn3 {
+    font-size: 25px;
+    width: 400px;
+}
+
+.drk-bg3 {
+    background-color: #000;
+}
+
+.tp-caption #gaurav {
+    display: block;
+    zoom: 0.45;
+}
+
+.tp-caption #avatar {
+    display: block;
+    zoom: 0.8;
+}
+
+.bootom-bar {
+    height: 60px;
+}
+
+.btn-contact {
+    margin-top: -30px;
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1024px) {
+    .header-text2 {
+        margin-top: -50px;
+    }
+
+    .header-text4 {
+        margin-top: -40px;
+    }
+
+    .bottom-line {
+        width: 350px;
+        margin-top: 0;
+    }
+
+    .tp-caption #gaurav {
+        display: block;
+        zoom: 0.4;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+    .menu-wrap2 {
+        display: block;
+    }
+
+    .footer1 {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .bootom-bar {
+        height: 300px;
+    }
+
+    .btn-contact {
+        margin-top: 200px;
+    }
+
+    .bottom-line {
+        width: 295px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 480px) {
+    .bottom-line {
+        width: 200px;
+        margin-top: -20px;
+    }
+
+    .header-text2 {
+        margin-top: -60px;
+    }
+
+    .header-text4 {
+        margin-top: -50px;
+    }
+
+    .header-btn {
+        font-size: 20px;
+    }
+
+    .tp-caption #gaurav {
+        display: block;
+        zoom: 0.3;
+    }
+
+    .header-btn1 {
+        font-size: 20px;
+        width: 300px;
+    }
+
+    .header-btn2 {
+        font-size: 20px;
+        width: 300px;
+    }
+
+    .header-btn3 {
+        font-size: 20px;
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .img-logo {
+        height: 60px;
+        width: 80px;
+    }
+
+    .header-text1 {
+        margin-top: 50px;
+        margin-left: 0px;
+    }
+
+    .header-text2 {
+        margin-top: -30px;
+    }
+
+    .header-text3 {
+        margin-top: 170px;
+    }
+
+    .header-text4 {
+        margin-top: -30px;
+    }
+
+    .bottom-line {
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+
+    .header-btn {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        font-size: 16px;
+    }
+
+    .header-btn1 {
+        font-size: 15px;
+        width: 200px;
+    }
+
+    .header-btn2 {
+        font-size: 15px;
+        width: 200px;
+    }
+
+    .header-btn3 {
+        font-size: 15px;
+        width: 200px;
+    }
+
+    .tp-caption #gaurav {
+        display: block;
+        zoom: 0.25;
+    }
+
+    .tp-caption .imglyr {
+        margin-top: -200px;
+        overflow: visible;
+    }
+
+    .tp-caption #avatar {
+        display: block;
+        zoom: 0.4;
+    }
+
+    .bootom-bar {
+        height: 57px;
+    }
+
+    .btn-contact {
+        margin-top: -30px;
+    }
+}

@@ -25,8 +25,8 @@
 
                             <!-- LAYER NR. 2 -->
                             <div class="tp-caption tp-resizeme rs-parallaxlevel-2" id="slide1-layer-2"
-                                data-x="['left','left','left','left']" data-hoffset="['-300','0','0','0']"
-                                data-y="['bottom','bottom','bottom','bottom']" data-voffset="['60','0','0','0']"
+                                data-x="['left','left','left','left']" data-hoffset="['-55','-80','0','0']"
+                                data-y="['bottom','bottom','bottom','bottom']" data-voffset="['220','50','0','0']"
                                 data-fontsize="['60','60','50','40']" data-lineheight="['70','70','60','50']"
                                 data-width="none" data-height="none" data-whitespace="nowrap" data-type="text"
                                 data-responsive_offset="on"
@@ -39,8 +39,8 @@
 
                             <!-- LAYER NR. 3 -->
                             <div class="tp-caption tp-resizeme rs-parallaxlevel-2" id="slide1-layer-3"
-                                data-x="['left','left','left','left']" data-hoffset="['150','0','0','0']"
-                                data-y="['top','top','top','top']" data-voffset="['-50','0','0','0']"
+                                data-x="['left','left','left','left']" data-hoffset="['150','80','0','0']"
+                                data-y="['top','top','top','top']" data-voffset="['-40','-40','0','0']"
                                 data-fontsize="['60','60','50','40']" data-lineheight="['70','70','60','50']"
                                 data-width="none" data-height="none" data-whitespace="nowrap" data-type="text"
                                 data-responsive_offset="on"
@@ -51,12 +51,10 @@
                                     src="assets/images/slide1-shape3.png" alt="slide1-shape3.png">
                             </div>
 
-                             
-
                             <!-- LAYER NR. 4 -->
                             <div class="tp-caption imglyr" id="slide1-layer-4" data-x="['right','right','right','right']"
-                                data-hoffset="['-50','0','0','0']" data-y="['bottom','bottom','bottom','bottom']"
-                                data-voffset="['50','0','0','0']" data-lineheight="['70','70','60','50']" data-width="none"
+                                data-hoffset="['200','100','50','20']" data-y="['middle','middle','middle','middle']"
+                                data-voffset="['-40','50','120','80']" data-lineheight="['70','70','60','50']" data-width="none"
                                 data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
                                 data-frames='[{"from":"y:bottom;z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:0;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
                                 data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]"
@@ -65,15 +63,11 @@
                                     src="assets/images/Avatar1.png" id="avatar" alt="Avatar1.png">
                             </div>
 
-                           
-
-                           
-
                             <!-- LAYER NR. 5 -->
                             <div class="tp-caption rev-btn thm-btn header-btn3" id="slide1-layer-7"
-                                data-x="['center','center','center','center']" data-hoffset="['-100','-100','0','0']"
-                                data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
-                                data-width="500" data-height="none" data-whitespace="nowrap" data-type="button"
+                                data-x="['center','center','center','center']" data-hoffset="['-100','-100','-200','-100']"
+                                data-y="['bottom','bottom','bottom','bottom']" data-voffset="['480','300','200','130']"
+                                data-width="none" data-height="none" data-whitespace="nowrap" data-type="button"
                                 data-actions='[{"event":"click","action":"simplelink","slide":"next","delay":"","target": "_self", "url": "/social-media"}]'
                                 data-responsive_offset="on" data-responsive="on"
                                 data-frames='[{"from":"y:-[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:0;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":3000,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
@@ -84,13 +78,13 @@
                                 Social Media
                             </div>
 
-                            
+
 
                             <!-- LAYER NR. 6 -->
                             <div class="tp-caption rev-btn thm-btn header-btn2" id="slide1-layer-7"
-                                data-x="['center','center','center','center']" data-hoffset="['-100','-100','0','0']"
-                                data-y="['middle','middle','middle','middle']" data-voffset="['-150','-150','-70','-70']"
-                                data-width="500" data-height="none" data-whitespace="nowrap" data-type="button"
+                                data-x="['center','center','center','center']" data-hoffset="['-100','-100','-200','-100']"
+                                data-y="['middle','middle','middle','middle']" data-voffset="['-150','-60','10','20']"
+                                data-width="none" data-height="none" data-whitespace="nowrap" data-type="button"
                                 data-actions='[{"event":"click","action":"simplelink","slide":"next","delay":"","target": "_self", "url": "/cloud-computing"}]'
                                 data-responsive_offset="on" data-responsive="on"
                                 data-frames='[{"from":"y:-[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:0;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":3000,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
@@ -101,11 +95,11 @@
                                 Cloud Computing
                             </div>
 
-                             <!-- LAYER NR. 7 -->
+                            <!-- LAYER NR. 7 -->
                             <div class="tp-caption rev-btn thm-btn header-btn1" id="slide1-layer-7"
-                                data-x="['center','center','center','center']" data-hoffset="['-100','-100','0','0']"
-                                data-y="['middle','middle','middle','middle']" data-voffset="['-300','-300','-90','-90']"
-                                data-width="500" data-height="none" data-whitespace="nowrap" data-type="button"
+                                data-x="['center','center','center','center']" data-hoffset="['-100','-100','-200','-100']"
+                                data-y="['top','top','top','top']" data-voffset="['180','180','220','170']"
+                                data-width="none" data-height="none" data-whitespace="nowrap" data-type="button"
                                 data-actions='[{"event":"click","action":"simplelink","slide":"next","delay":"","target": "_self", "url": "/network-security"}]'
                                 data-responsive_offset="on" data-responsive="on"
                                 data-frames='[{"from":"y:-[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:0;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":3000,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'

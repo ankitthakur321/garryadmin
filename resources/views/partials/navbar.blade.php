@@ -1,7 +1,7 @@
 <header class="stick style1 w-100 d-flex flex-wrap justify-content-between align-items-center d-lg-none">
     <div class="logo">
         <a href="/" title="Home">
-            <img class="img-fluid img-logo" src="{{ asset('assets/images/logo-gaurav.png') }}" alt="Logo"
+            <img class="img-fluid img-logo2" src="{{ asset('assets/images/logo-gaurav.png') }}" alt="Logo"
                 srcset="{{ asset('assets/images/logo-gaurav.png') }}">
         </a>
     </div><!-- Logo -->
