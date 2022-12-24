@@ -50,6 +50,15 @@
                             <textarea id="editBlogContent" name="blogContent" class="form-control"> {{ $blog->blog_content }} </textarea>
                         </div>
                         <div class="col-md-10">
+                            <label for="blogCategory" class="form-label">Blog Category</label>
+                            <select class="form-select" id="blogCategory" name="blogCategory" aria-label="blog category" required>
+                                <option value="">Select a Category</option>
+                                <option value="Network & Security" {{$blog->blog_category=="Network & Security"?"selected":""}}>Network & Security</option>
+                                <option value="Cloud Computing" {{$blog->blog_category=="Cloud Computing"?"selected":""}}>Cloud Computing</option>
+                                <option value="Social Media" {{$blog->blog_category=="Social Media"?"selected":""}}>Social Media</option>
+                            </select>
+                        </div>
+                        <div class="col-md-10">
                             <label for="blogAuthor" class="form-label">Author</label>
                             <input type="text" class="form-control bg-white" id="blogAuthor" name="blogAuthor"
                                 value="{{ Auth::user()->name }}" readonly>

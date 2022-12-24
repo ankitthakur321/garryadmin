@@ -6,6 +6,7 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
+use App\Models\Blog;
 
 class Controller extends BaseController
 {
@@ -26,23 +27,33 @@ class Controller extends BaseController
         return view('contact');
     }
 
-    public function socialMedia()
-    {
-        return view('social-media');
-    }
-
     public function networkSecurity()
     {
-        return view('network-security');
-    }
-
-    public function diveIn()
-    {
-        return view('dive-in');
+        $blogs = Blog::where('blog_category', "Network & Security")
+            ->orderBy('created_at')
+            ->paginate(10);
+        return view('network-security', compact('blogs'));
     }
 
     public function cloudComputing()
     {
-        return view('cloud-computing');
+        $blogs = Blog::where('blog_category', "Cloud Computing")
+            ->orderBy('created_at')
+            ->paginate(10);
+        return view('cloud-computing', compact('blogs'));
+    }
+
+    public function socialMedia()
+    {
+        $blogs = Blog::where('blog_category', "Social Media")
+            ->orderBy('created_at')
+            ->paginate(10);
+        return view('social-media', compact('blogs'));
+    }
+
+
+    public function diveIn()
+    {
+        return view('dive-in');
     }
 }

@@ -31,6 +31,7 @@ class BlogController extends Controller
         $blog->blog_image = $blogImage;
         $blog->blog_short_description = $request->input('blogDesc');
         $blog->blog_content = $request->input('blogContent');
+        $blog->blog_category = $request->input('blogCategory');
         $blog->blog_author = $request->input('blogAuthor');
         $blog->save();
         return redirect('my-admin/view-blogs')->with('status', "Blog Inserted Successfully");
@@ -55,6 +56,7 @@ class BlogController extends Controller
             'blog_title' => $request->input('blogTitle'),
             'blog_short_description' => $request->input('blogDesc'),
             'blog_content' => $request->input('blogContent'),
+            'blog_category' => $request->input('blogCategory'),
             'updated_at' => date('Y-m-d H:i:s')
         ]);
 

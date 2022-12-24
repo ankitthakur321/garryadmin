@@ -26,26 +26,38 @@
                     <h6 class="mb-0 text-uppercase">Add Blog Content</h6>
                     <hr />
                     {{-- <h4 class="mb-4">Add Blog Content</h4> --}}
-                    <form method="POST" class="row g-3 needs-validation" action="/my-admin/save-blog" enctype="multipart/form-data">
+                    <form method="POST" class="row g-3 needs-validation" action="/my-admin/save-blog"
+                        enctype="multipart/form-data">
                         @csrf
                         <div class="col-md-10">
                             <label for="blogTitle" class="form-label">Blog Title</label>
-                            <input type="text" class="form-control" id="blogTitle" name="blogTitle" placeholder="Enter Blog Title" required>
+                            <input type="text" class="form-control" id="blogTitle" name="blogTitle"
+                                placeholder="Enter Blog Title" required>
                             <div class="valid-feedback">Looks good!</div>
                         </div>
                         <div class="col-md-10">
                             <label for="validationCustom02" class="form-label">Blog Image</label>
                             <input type="file" class="form-control" id="blogImage" name="blogImage"
-                                aria-describedby="BlogImage" aria-label="Upload">
+                                aria-describedby="BlogImage" aria-label="Upload" required>
                         </div>
                         <div class="col-md-10">
                             <label for="blogDesc" class="form-label">Blog Short Description</label>
-                            <input type="text" class="form-control" id="blogDesc" name="blogDesc" placeholder="Enter Blog Short Description" required>
+                            <input type="text" class="form-control" id="blogDesc" name="blogDesc"
+                                placeholder="Enter Blog Short Description" required>
                             <div class="valid-feedback">Looks good!</div>
                         </div>
                         <div class="col-md-10">
                             <label for="blogContent" class="form-label">Blog Content</label>
                             <textarea id="blogContent" name="blogContent" class="form-control"></textarea>
+                        </div>
+                        <div class="col-md-10">
+                            <label for="blogCategory" class="form-label">Blog Category</label>
+                            <select class="form-select" id="blogCategory" name="blogCategory" aria-label="blog category" required>
+                                <option value="">Select a Category</option>
+                                <option value="Network & Security">Network & Security</option>
+                                <option value="Cloud Computing">Cloud Computing</option>
+                                <option value="Social Media">Social Media</option>
+                            </select>
                         </div>
                         <div class="col-md-10">
                             <label for="blogAuthor" class="form-label">Author</label>

@@ -36,8 +36,9 @@
                         @foreach ($blogs as $key => $blog)
                             <div class="col-md-3">
                                 <div class="card border-end shadow-none">
-                                    <img src="{{ asset($blog->blog_image) }}" class="card-img-top" alt="Blog Image">
+                                    <img src="{{ asset($blog->blog_image) }}" class="card-img-top" alt="Blog Image" height="250">
                                     <div class="card-body">
+                                        <span class="badge bg-success">{{ $blog->blog_category }}</span>
                                         <h5 class="card-title">{{ $blog->blog_title }}</h5>
                                         <p class="card-text">{{ $blog->blog_short_description }}</p>
                                         <hr>
@@ -50,7 +51,7 @@
                                         </div>
                                     </div>
                                     <div class="card-footer bg-white"> <small class="text-muted">Created on
-                                            {{ date('d/M/Y', strtotime($blog->created_at)) }}</small>
+                                            {{ date('d M Y', strtotime($blog->created_at)) }}</small>
                                     </div>
                                 </div>
 

@@ -29,122 +29,28 @@
             <div class="container">
                 <div class="blog-wrap2 position-relative w-100">
                     <div class="row">
-                        <div class="col-md-6 col-sm-6 col-lg-6">
-                            <div class="post-style2 mb-45 w-100">
-                                <div class="post-img2 position-relative overflow-hidden w-100"><a href="blog-detail.html"
-                                        title=""><img class="img-fluid w-100"
-                                            src="assets/images/resources/post-img2-1.jpg" alt="Post Image 1"></a></div>
-                                <div class="post-info2 w-100">
-                                    <div class="post-meta thm-bg brd-rd3">
-                                        <span>09 May 2018</span> / <a href="javascript:void(0);" title="">Branding</a>
+                        @foreach ($blogs as $key => $blog)
+                            <div class="col-md-6 col-sm-6 col-lg-6">
+                                <div class="post-style2 mb-45 w-100">
+                                    <div class="post-img2 position-relative overflow-hidden w-100"><a
+                                            href="/blog-detail/{{ $blog->id }}" title=""><img
+                                                class="img-fluid w-100" src="{{ $blog->blog_image }}"
+                                                alt="{{ $blog->blog_title . ' Image' }}"></a></div>
+                                    <div class="post-info2 w-100">
+                                        <div class="post-meta thm-bg brd-rd3">
+                                            <span>{{ date('d M Y', strtotime($blog->created_at)) }}</span> / <a
+                                                href="javascript:void(0);" title="">{{ $blog->blog_category }}</a>
+                                        </div>
+                                        <h3 class="mb-0"><a href="/blog-detail/{{ $blog->id }}"
+                                                title="">{{ $blog->blog_title }}</a></h3>
+                                        <p class="mb-0">{{ $blog->blog_short_description }}</p>
                                     </div>
-                                    <h3 class="mb-0"><a href="blog-detail.html" title="">The portraits of the
-                                            members of “Behind The Siege</a></h3>
-                                    <p class="mb-0">Our place rule night were. Make, air great creepeth multiply herb
-                                        evening saying beast very meat hath.Our place rule night were. Make, air great
-                                        creepeth multiply herb evening saying beast very meat hath.</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6 col-lg-6">
-                            <div class="post-style2 mb-45 w-100">
-                                <div class="post-img2 position-relative overflow-hidden w-100"><a href="blog-detail.html"
-                                        title=""><img class="img-fluid w-100"
-                                            src="assets/images/resources/post-img2-2.jpg" alt="Post Image 2"></a></div>
-                                <div class="post-info2 w-100">
-                                    <div class="post-meta thm-bg brd-rd3">
-                                        <span>09 May 2018</span> / <a href="javascript:void(0);" title="">Branding</a>
-                                    </div>
-                                    <h3 class="mb-0"><a href="blog-detail.html" title="">The portraits of the
-                                            members of “Behind The Siege</a></h3>
-                                    <p class="mb-0">Our place rule night were. Make, air great creepeth multiply herb
-                                        evening saying beast very meat hath.Our place rule night were. Make, air great
-                                        creepeth multiply herb evening saying beast very meat hath.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6 col-lg-6">
-                            <div class="post-style2 mb-45 w-100">
-                                <div class="post-img2 position-relative overflow-hidden w-100"><a href="blog-detail.html"
-                                        title=""><img class="img-fluid w-100"
-                                            src="assets/images/resources/post-img2-3.jpg" alt="Post Image 3"></a></div>
-                                <div class="post-info2 w-100">
-                                    <div class="post-meta thm-bg brd-rd3">
-                                        <span>09 May 2018</span> / <a href="javascript:void(0);" title="">Branding</a>
-                                    </div>
-                                    <h3 class="mb-0"><a href="blog-detail.html" title="">The portraits of the
-                                            members of “Behind The Siege</a></h3>
-                                    <p class="mb-0">Our place rule night were. Make, air great creepeth multiply herb
-                                        evening saying beast very meat hath.Our place rule night were. Make, air great
-                                        creepeth multiply herb evening saying beast very meat hath.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6 col-lg-6">
-                            <div class="post-style2 mb-45 w-100">
-                                <div class="post-img2 position-relative overflow-hidden w-100"><a href="blog-detail.html"
-                                        title=""><img class="img-fluid w-100"
-                                            src="assets/images/resources/post-img2-4.jpg" alt="Post Image 4"></a></div>
-                                <div class="post-info2 w-100">
-                                    <div class="post-meta thm-bg brd-rd3">
-                                        <span>09 May 2018</span> / <a href="javascript:void(0);" title="">Branding</a>
-                                    </div>
-                                    <h3 class="mb-0"><a href="blog-detail.html" title="">The portraits of the
-                                            members of “Behind The Siege</a></h3>
-                                    <p class="mb-0">Our place rule night were. Make, air great creepeth multiply herb
-                                        evening saying beast very meat hath.Our place rule night were. Make, air great
-                                        creepeth multiply herb evening saying beast very meat hath.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6 col-lg-6">
-                            <div class="post-style2 mb-45 w-100">
-                                <div class="post-img2 position-relative overflow-hidden w-100"><a href="blog-detail.html"
-                                        title=""><img class="img-fluid w-100"
-                                            src="assets/images/resources/post-img2-5.jpg" alt="Post Image 5"></a></div>
-                                <div class="post-info2 w-100">
-                                    <div class="post-meta thm-bg brd-rd3">
-                                        <span>09 May 2018</span> / <a href="javascript:void(0);" title="">Branding</a>
-                                    </div>
-                                    <h3 class="mb-0"><a href="blog-detail.html" title="">The portraits of the
-                                            members of “Behind The Siege</a></h3>
-                                    <p class="mb-0">Our place rule night were. Make, air great creepeth multiply herb
-                                        evening saying beast very meat hath.Our place rule night were. Make, air great
-                                        creepeth multiply herb evening saying beast very meat hath.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6 col-lg-6">
-                            <div class="post-style2 mb-45 w-100">
-                                <div class="post-img2 position-relative overflow-hidden w-100"><a href="blog-detail.html"
-                                        title=""><img class="img-fluid w-100"
-                                            src="assets/images/resources/post-img2-6.jpg" alt="Post Image 6"></a></div>
-                                <div class="post-info2 w-100">
-                                    <div class="post-meta thm-bg brd-rd3">
-                                        <span>09 May 2018</span> / <a href="javascript:void(0);"
-                                            title="">Branding</a>
-                                    </div>
-                                    <h3 class="mb-0"><a href="blog-detail.html" title="">The portraits of the
-                                            members of “Behind The Siege</a></h3>
-                                    <p class="mb-0">Our place rule night were. Make, air great creepeth multiply herb
-                                        evening saying beast very meat hath.Our place rule night were. Make, air great
-                                        creepeth multiply herb evening saying beast very meat hath.</p>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div><!-- Blog Style 2 -->
-                <div class="pagination-wrap mt-55 w-100 text-center">
-                    <ul class="pagination mb-0">
-                        <li class="page-item"><a class="page-link" href="javascript:void(0);" title="">1</a></li>
-                        <li class="page-item active"><span class="page-link">2</span></li>
-                        <li class="page-item"><a class="page-link" href="javascript:void(0);" title="">3</a></li>
-                        <li class="page-item"><a class="page-link" href="javascript:void(0);" title="">4</a></li>
-                        <li class="page-item"><a class="page-link" href="javascript:void(0);" title="">5</a></li>
-                        <li class="page-item">...</li>
-                        <li class="page-item"><a class="page-link" href="javascript:void(0);" title="">13</a></li>
-                    </ul>
-                </div><!-- Pagination Wrap -->
+                {{ $blogs->links('vendor.pagination.custom') }}
             </div>
         </div>
     </section>
