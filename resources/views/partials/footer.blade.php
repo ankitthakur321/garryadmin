@@ -1,13 +1,13 @@
 <footer>
-    <div class="w-100 drk-bg3 d-xl-none" style="padding-top:20px;padding-bottom:33px;">
+    <div class="w-100 drk-bg3 d-xl-none d-lg-block" style="padding-top:20px;padding-bottom:33px;">
         <div class="container">
-            <div class="footer-wrap text-center w-100 py-md-5">
+            <div class="footer-wrap text-center w-100 py-md-5 mb-0">
                 <div class="footer-inner d-inline-block w-100">
-                    <div class="logo d-inline-block">
+                    <div class="logo logo2 d-inline-block">
                         <h1 class="mb-0 text-white" style="font-family: Lucida Handwriting"><a href="/" title="">GAURAV GARRY</a></h1>
                     </div>
-                    <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipiscing elit sed doeiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud.</p>
+                    {{-- <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipiscing elit sed doeiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud.</p> --}}
                     <div class="scl2 d-inline-block">
                         <a href="javascript:void(0);" title="" target="_blank"><i
                                 class="fab fa-facebook-f"></i></a>

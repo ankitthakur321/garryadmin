@@ -31,7 +31,7 @@
 <div class="sticky-header w-100 position-fixed active bg-transparent">
     <div class="logo">
         <a href="/" title="Home">
-            <img class="img-fluid img-logo" src="{{ asset('assets/images/logo-gaurav.png') }}" alt="Logo"
+            <img class="img-fluid img-logo logo1" src="{{ asset('assets/images/logo-gaurav.png') }}" alt="Logo"
                 srcset="{{ asset('assets/images/logo-gaurav.png') }}">
         </a>
     </div>
