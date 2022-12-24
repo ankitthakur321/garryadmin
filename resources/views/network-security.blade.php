@@ -30,8 +30,8 @@
         <div class="w-100 pt-155 pb-120 position-relative">
             <div class="container">
                 <div class="blog-wrap2 position-relative w-100">
-                    <div class="row">
-                        @if ($blogs)
+                    @if (count($blogs) > 0)
+                        <div class="row">
                             @foreach ($blogs as $key => $blog)
                                 <div class="col-md-6 col-sm-6 col-lg-6">
                                     <div class="post-style2 mb-45 w-100">
@@ -51,10 +51,10 @@
                                     </div>
                                 </div>
                             @endforeach
-                        @else
-                            <div class="text-center"><span>No Data Found</span></div>
-                        @endif
-                    </div>
+                        </div>
+                    @else
+                        <div class="text-center"><span>No Data Found</span></div>
+                    @endif
                 </div><!-- Blog Style 2 -->
                 {{ $blogs->links('vendor.pagination.custom') }}
             </div>
