@@ -25,6 +25,7 @@ Route::get('/social-media', [Controller::class, 'socialMedia']);
 Route::get('/dive-in', [Controller::class, 'diveIn']);
 Route::get('/about', [Controller::class, 'about']);
 Route::get('/contact', [Controller::class, 'contact']);
+Route::get('/blog-detail/{id}', [Controller::class, 'blogDetail']);
 
 //Admin Portal Routes
 Route::group(

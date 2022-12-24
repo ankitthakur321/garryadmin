@@ -27,6 +27,11 @@ class Controller extends BaseController
         return view('contact');
     }
 
+    public function diveIn()
+    {
+        return view('dive-in');
+    }
+
     public function networkSecurity()
     {
         $blogs = Blog::where('blog_category', "Network & Security")
@@ -51,9 +56,16 @@ class Controller extends BaseController
         return view('social-media', compact('blogs'));
     }
 
-
-    public function diveIn()
+    public function blogDetail($id)
     {
-        return view('dive-in');
+        $blog = Blog::find($id);
+        $cat = null;
+        if ($blog->blog_category == 'Cloud Computing')
+            $cat = '/cloud-computing';
+        else if ($blog->blog_category == 'Network & Security')
+            $cat = '/network-security';
+        else
+            $cat = '/social-media';
+        return view('blog-details', compact('blog', 'cat'));
     }
 }
